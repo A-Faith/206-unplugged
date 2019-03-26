@@ -101,13 +101,14 @@ textarea {
 
    html {
      font-size: 16px;
-     color: white;
+
 
    }
 
    body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     color: #e2e3ed;
 
    }
 
@@ -135,22 +136,23 @@ textarea {
      font-family: 'Poppins', sans-serif;
      font-size: 1.125em;
      font-weight: lighter;
+     margin: 20px 0;
 
    }
 
    p {
      font-size: .875em;
-     line-height: 1.285em;
+     line-height: 1.285;
 
    }
 
    img {
+	width: 100%;
+  }
 
-   }
-
-   figure {
-
-   }
+  figure {
+        margin: 0;
+  }
 
    address {
      font-style: normal;
@@ -173,7 +175,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: black;
+  background-color: #202322;
 }
 
 /************Header Styles****************/
@@ -188,6 +190,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider {
@@ -267,6 +277,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -317,6 +330,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features.jpg') center no-repeat;
+  background-size: cover;
 
 }
 
@@ -347,7 +362,7 @@ input[type=button] {
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   background-color: rgb(42,66,58);
 }
 
@@ -360,6 +375,8 @@ input[type=button] {
   margin-bottom: 40px;
   line-height: 1;
 }
+
+
 
 /************Mobile Styles About****************/
 
@@ -512,12 +529,12 @@ input[type=button] {
 
 h2 {
   font-size: 2.25em;
-  line-height: 1.333em;
+  line-height: 1.333;
 }
 
 h3 {
   font-size: 1.5em;
-  line-height: 1.25em;
+  line-height: 1.25;
 
 }
 
@@ -529,6 +546,10 @@ header {
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
+}
+
+header figure {
+    width: 30%;
 }
 
 header nav {
@@ -586,12 +607,13 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
-.reviews article div {
-  width: 49%;
-}
-
 .reviews h2 {
   width: 90%;
+}
+
+.reviews article figure,
+.reviews article div {
+  width: 49%;
 }
 
 .reviews h3 {
@@ -604,10 +626,11 @@ footer .content-wrapper {
   margin: 100px 0;
 }
 
-.footer-content {
+footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 footer h4 {
@@ -632,7 +655,7 @@ footer .copyright {
 .mission-content {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 }
 
 .mission-content p {
@@ -696,6 +719,7 @@ footer .copyright {
   }
 
   /*Homepage Desktop*/
+
 
   .hero-area h1 {
     width: 60%;
