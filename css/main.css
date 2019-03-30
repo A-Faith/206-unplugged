@@ -678,6 +678,10 @@ footer .copyright {
   width: 40%;
 }
 
+.map figure {
+  padding-bottom: 45.5%;
+}
+
 .contact-content {
   display: flex;
   justify-content: space-between;
@@ -774,6 +778,10 @@ footer .copyright {
   .contact-section .content-wrapper h2 {
     width: 100%;
     font-size: 3em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
   }
 
   .contact-section .content-wrapper h2 {
